@@ -69,17 +69,15 @@
                             <input type="email" class="form-control" placeholder="Your Email" name="email" required>
                         </div>
                         
-                        <div class="col-md-12">
+                        <div class="col-md-12 col-sm-12">
                             <textarea class="form-control" rows="6" placeholder="Your Message" name="pesan" required></textarea>
                         </div>
                         
-                        <!-- reCAPTCHA Section -->
-                        <div class="col-md-offset-3 col-md-6 text-center">
-                            <div class="g-recaptcha" data-sitekey="6LeyzP4pAAAAALM0vv2JO_qfBbn7tl1GHsLjIBLG" data-callback="enableSubmitButton"></div>
-                            <p id="recaptcha-error" style="display: none; color: red;">Please complete the reCAPTCHA.</p>
-                        </div>
-                        
-                        <div class="col-md-12 text-center">
+                        <!-- Google reCAPTCHA -->
+                        <div class="g-recaptcha" data-sitekey="6LeyzP4pAAAAALM0vv2JO_qfBbn7tl1GHsLjIBLG" data-callback="enableSubmitButton"></div>
+                        <p id="recaptcha-error" style="display: none; color: red;">Please complete the reCAPTCHA.</p>
+
+                        <div class="col-md-12 col-sm-12">
                             <input type="submit" class="btn-submit" value="Send Now" onclick="return validateForm()">
                         </div>
                     </div>
