@@ -9,7 +9,7 @@
     <meta name="keywords" content="">
     <meta name="author" content="Awaiken Theme">
     <!-- Page Title -->
-    <title>Rafli - Portfolio Coming Soon Page</title>
+    <title>Rafli - Portofolio Coming Soon Page</title>
     <!-- Google Fonts css-->
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700,800,900" rel="stylesheet">
     <!-- Bootstrap css -->
@@ -28,20 +28,20 @@
 </head>
 <body>
     <!-- Coming Soon wrapper -->
-    <div class="coming-soon">
-        <div class="coming-soon-info">
-            <div class="coming-soon-inner">
+    <div class="comming-soon">
+        <div class="comming-soon-info">
+            <div class="comming-soon-inner">
                 <!-- Logo Start -->
                 <div class="logo">
                     <h2><span>Hello,</span> I'm Ahmad Rafli</h2>
-                    <p>Frontend Developer & IT Support</p>
+                    <p>Frontend Develover & IT Support</p>
                 </div>
                 <!-- Logo end -->
                 
                 <div class="site-info">
                     <h2>I’m Launching My<span>New Website</span></h2>
-                    <p>We're coming soon! <br />
-                    I'm working hard to give you the best experience!</p>
+                    <p>We're coming soon!. <br />
+                    Im working hard to give you the best experience!</p>
                 </div>
                 
                 <!-- Countdown Start -->
@@ -62,24 +62,25 @@
                 <form id="contactForm" action="https://script.google.com/macros/s/AKfycby0ubQC2nSmzhW3QKhgiKc22Sgs4Sv7dspJRxmnberU4kic_a5qngaIzO1jJEtcrqb6/exec" method="post">
                     <div class="row">
                         <div class="col-md-6 col-sm-6">
-                            <input type="text" class="form-control" placeholder="Your Name" name="nama" required>
+                            <input type="text" class="form-control" placeholder="Your Name" name="nama" />
                         </div>
                         
                         <div class="col-md-6 col-sm-6">
-                            <input type="email" class="form-control" placeholder="Your Email" name="email" required>
+                            <input type="text" class="form-control" placeholder="Your Email" name="email" />
                         </div>
                         
                         <div class="col-md-12 col-sm-12">
-                            <textarea class="form-control" rows="6" placeholder="Your Message" name="pesan" required></textarea>
+                            <textarea class="form-control" rows="6" placeholder="Your Message" name="pesan"></textarea>
                         </div>
                         
-                        <!-- Google reCAPTCHA -->
                         <div class="g-recaptcha" data-sitekey="6LeyzP4pAAAAALM0vv2JO_qfBbn7tl1GHsLjIBLG" data-callback="enableSubmitButton"></div>
-                        <p id="recaptcha-error" style="display: none; color: red;">Please complete the reCAPTCHA.</p>
+			<p id="recaptcha-error" style="display: none; color: red;">Please complete the reCAPTCHA.</p>
 
                         <div class="col-md-12 col-sm-12">
                             <input type="submit" class="btn-submit" value="Send Now" onclick="return validateForm()">
                         </div>
+
+     
                     </div>
                 </form>
             </div>
@@ -87,13 +88,13 @@
         </div>
     </div>
 
-    <div id="notification" style="display: none;" class="alert alert-success">
-        Your message has been sent successfully!
-    </div>
-    
+	<div id="notification" style="display: none;" class="alert alert-success">
+		Pesan telah terkirim!
+	</div>
+	
     <!-- Coming Soon wrapper end -->
     <script src="https://www.google.com/recaptcha/api.js" async defer></script>
-    <!-- jQuery Library File -->
+    <!-- Jquery Library File -->
     <script src="js/jquery-1.12.4.min.js"></script>
     <!-- Timer counter js file -->
     <script src="js/countdown-timer.js"></script>
@@ -107,18 +108,18 @@
     <script src="js/function.js"></script>
     
     <script>
-        function enableSubmitButton() {
-            document.getElementById('recaptcha-error').style.display = 'none';
-        }
+    function enableSubmitButton() {
+        document.getElementById('recaptcha-error').style.display = 'none';
+    }
 
-        function validateForm() {
-            if (!grecaptcha.getResponse()) {
-                document.getElementById('recaptcha-error').style.display = 'block';
-                return false;
-            }
-            return true;
+    function validateForm() {
+        if (!grecaptcha.getResponse()) {
+            document.getElementById('recaptcha-error').style.display = 'block';
+            return false;
         }
-    </script>
+        return true;
+    }
+   </script>
 
 </body>
 </html>
