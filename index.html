@@ -107,16 +107,25 @@
     <!-- Main Custom js file -->
     <script src="js/function.js"></script>
     
+    
     <script>
     function enableSubmitButton() {
         document.getElementById('recaptcha-error').style.display = 'none';
     }
 
     function validateForm() {
+
+        const email = document.forms["contactForm"]["email"].value;
+        const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
         if (!grecaptcha.getResponse()) {
             document.getElementById('recaptcha-error').style.display = 'block';
             return false;
         }
+        if (!emailPattern.test(email)) {
+            document.getElementById('email-error').style.display = 'block';
+            return false;
+        } 
         return true;
     }
    </script>
