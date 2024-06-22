@@ -1,12 +1,3 @@
-/*
-	Template Name 	: Freelancer - Responsive Coming Soon Page
-	Author 			: Awaiken Theme
-	Author Url 		: https://awaikenthemes.com
-*/
-
-/************************************/
-/***** 	      General css		 ****/
-/************************************/
 html{
 	height: 100%;
 }
@@ -372,5 +363,11 @@ a:focus{
 		color: #fff;
 		font-size: 12px;
 		font-weight: 300;
+	}
+	.g-recaptcha {
+		margin: 0 auto;
+		display: block;
+		margin-bottom: 15px;
+		text-align: center;
 	}
 }
