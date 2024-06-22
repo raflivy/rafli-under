@@ -73,11 +73,14 @@
                             <textarea class="form-control" rows="6" placeholder="Your Message" name="pesan"></textarea>
                         </div>
                         
-                        <div class="g-recaptcha" data-sitekey="6LeyzP4pAAAAALM0vv2JO_qfBbn7tl1GHsLjIBLG"></div>
+                        <div class="g-recaptcha" data-sitekey="6LeyzP4pAAAAALM0vv2JO_qfBbn7tl1GHsLjIBLG" data-callback="enableSubmitButton"></div>
+			<p id="recaptcha-error" style="display: none; color: red;">Please complete the reCAPTCHA.</p>
 
                         <div class="col-md-12 col-sm-12">
-                            <input type="submit" class="btn-submit" value="Send Now" />
-                        </div>  
+                            <input type="submit" class="btn-submit" value="Send Now" onclick="return validateForm()">
+                        </div>
+
+     
                     </div>
                 </form>
             </div>
@@ -103,6 +106,20 @@
     <script src="js/jquery.magnific-popup.min.js"></script>
     <!-- Main Custom js file -->
     <script src="js/function.js"></script>
+    
+    <script>
+    function enableSubmitButton() {
+        document.getElementById('recaptcha-error').style.display = 'none';
+    }
+
+    function validateForm() {
+        if (!grecaptcha.getResponse()) {
+            document.getElementById('recaptcha-error').style.display = 'block';
+            return false;
+        }
+        return true;
+    }
+   </script>
 
 </body>
 </html>
