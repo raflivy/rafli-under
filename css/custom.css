@@ -49,30 +49,7 @@ a:focus{
 	background: rgba(0,0,0,0.85);
 }
 
-.countdown-timer-wrapper{
-	text-align: center;
-}
 
-.timer .timer-wrapper{
-	display: inline-block;
-	width: 80px;
-	margin-top: 40px;
-	text-align: center;
-	vertical-align: top;
-}
-
-.timer .timer-wrapper .time{
-	font-size: 30px;
-	color: #fff;
-	font-weight: 600;
-	line-height: 1em;
-}
-
-.timer .timer-wrapper .text{
-	color: #fff;
-	font-size: 12px;
-	font-weight: 300;
-}
 
 .logo{
 	display: inline-block;
@@ -244,12 +221,14 @@ a:focus{
 .contact-box .form-control:-ms-input-placeholder{
 	color: #fff;
 }
+
 .recaptcha-container {
-    display: flex;
+	display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 20px;
+    margin-bottom: 20px; 
 }
+
 .btn-submit{
 	background: #e45164;
 	text-transform: uppercase;
@@ -259,7 +238,7 @@ a:focus{
 	padding: 14px 30px 12px;
 	transition: all 0.4s;
 	display: block;
-	width: 100%;
+    width: 100%;
 	margin-top: 20px;
 }
 
@@ -352,30 +331,7 @@ a:focus{
 		letter-spacing: 0.05em;
 	}
 	
-	.timer .timer-wrapper{
-		display: inline-block;
-		width: 60px;
-		margin-top: 40px;
-		text-align: center;
-		vertical-align: top;
-	}
-
-	.timer .timer-wrapper .time{
-		font-size: 26px;
-		color: #fff;
-		font-weight: 600;
-		line-height: 1em;
-	}
-
-	.timer .timer-wrapper .text{
-		color: #fff;
-		font-size: 12px;
-		font-weight: 300;
-	}
 	.g-recaptcha {
-		margin: 0 auto;
-		display: block;
-		margin-bottom: 15px;
-		text-align: center;
+		margin-bottom: 20px;
 	}
 }
