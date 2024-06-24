@@ -258,6 +258,9 @@ a:focus{
 	border: none;
 	padding: 14px 30px 12px;
 	transition: all 0.4s;
+	display: block;
+	width: 100%;
+	margin-top: 20px;
 }
 
 .btn-submit:hover{
