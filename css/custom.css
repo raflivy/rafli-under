@@ -244,7 +244,12 @@ a:focus{
 .contact-box .form-control:-ms-input-placeholder{
 	color: #fff;
 }
-
+.recaptcha-container {
+	display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
 .btn-submit{
 	background: #e45164;
 	text-transform: uppercase;
