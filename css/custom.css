@@ -38,17 +38,6 @@ a:focus{
 	min-height: 100%;
 }
 
-.comming-soon:before{
-	content: '';
-	display: block;
-	position: absolute;
-	top: 0;
-	left: 0;
-	right: 0;
-	bottom: 0;
-	background: rgba(0,0,0,0.85);
-}
-
 
 
 .logo{
@@ -137,11 +126,12 @@ a:focus{
 	line-height: 1.8em;
 	color: #fff;
 	font-weight: 300;
+	margin-top: 10px;
 }
 
 .btn2 {
     display: inline-block;
-    text-transform: uppercase;
+	text-transform: uppercase;
     padding: 10px 20px;
     margin: 10px 0;
     font-weight: 500;
@@ -157,6 +147,8 @@ a:focus{
 	background: #fff;
 	color: #e45164;
 }
+
+
 .contact-form{
 	width: 50%;
 	max-height: 100%;
@@ -206,6 +198,15 @@ a:focus{
 	color: #fff;
 	font-size: 14px;
 	font-weight: 300;
+	margin-bottom: 10px;
+}
+
+.contact-box .social-links {
+    margin-top: 10px;
+}
+
+.contact-box .title {
+    margin-bottom: 10px;
 }
 
 .contact-box form{
@@ -224,10 +225,6 @@ a:focus{
 	resize: none;
 }
 
-.contact-box .title {
-    margin-bottom: 10px;
-}
-
 .contact-box .form-control::-webkit-input-placeholder{
 	color: #fff;
 }
@@ -243,9 +240,10 @@ a:focus{
 .contact-box .form-control:-ms-input-placeholder{
 	color: #fff;
 }
+
 .social-links {
 	display: flex;
-	justify-content: center; 
+	justify-content: center;
 	gap: 50px; 
 	padding: 10px; 
   }
@@ -257,7 +255,7 @@ a:focus{
 	align-items: center;
 	justify-content: center;
 	border-radius: 50%;
-	transition: transform 0.3s; 
+	transition: transform 0.4s;
   }
   
   .social-links .social-icon img {
@@ -269,6 +267,9 @@ a:focus{
   .social-links .social-icon:hover {
 	transform: scale(1.1); 
   }
+  
+
+  
 
 .recaptcha-container {
 	display: flex;
@@ -352,7 +353,7 @@ a:focus{
 	}
 	
 	.title{
-		margin-bottom: 50px;
+		margin-bottom: 10px;
 	}
 	
 	.contact-box{
