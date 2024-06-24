@@ -66,7 +66,7 @@
                         </div>
                         
                         <div class="col-md-6 col-sm-6">
-                            <input type="text" class="form-control" placeholder="Your Email" name="email" />
+                            <input type="email" class="form-control" placeholder="Your Email" name="email" />
                         </div>
                         
                         <div class="col-md-12 col-sm-12">
@@ -96,8 +96,6 @@
     <script src="https://www.google.com/recaptcha/api.js" async defer></script>
     <!-- Jquery Library File -->
     <script src="js/jquery-1.12.4.min.js"></script>
-    <!-- Timer counter js file -->
-    <script src="js/countdown-timer.js"></script>
     <!-- SmoothScroll -->
     <script src="js/SmoothScroll.js"></script>
     <!-- Bootstrap js file -->
@@ -115,17 +113,11 @@
 
     function validateForm() {
 
-        const email = document.forms["contactForm"]["email"].value;
-        const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-
         if (!grecaptcha.getResponse()) {
             document.getElementById('recaptcha-error').style.display = 'block';
             return false;
         }
-        if (!emailPattern.test(email)) {
-            document.getElementById('email-error').style.display = 'block';
-            return false;
-        } 
+
         return true;
     }
    </script>
