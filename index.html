@@ -35,7 +35,7 @@
                 <!-- Logo Start -->
                 <div class="logo">
                     <h2><span>Hello,</span> I'm Ahmad Rafli</h2>
-                    <p>Frontend Develover & IT Support</p>
+                    <h3 class="h3">a <span class= "span typed-text" ></span><span class="cursor">&nbsp;</span></h3>
                 </div>
                 <!-- Logo end -->
                 
@@ -116,23 +116,17 @@
     <script src="js/jquery.magnific-popup.min.js"></script>
     <!-- Main Custom js file -->
     <script src="js/function.js"></script>
-    
-    
-    <script>
-    function enableSubmitButton() {
-        document.getElementById('recaptcha-error').style.display = 'none';
-    }
 
-    function validateForm() {
-
-        if (!grecaptcha.getResponse()) {
-            document.getElementById('recaptcha-error').style.display = 'block';
-            return false;
-        }
-
-        return true;
-    }
+   <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+   <script>
+     var typed = new Typed(".typed-text", {
+       strings: ["IT Support", "Web Developer"],
+       typeSpeed: 100,
+       backSpeed: 60,
+       loop: true
+     });
    </script>
+
    <footer class="footer">
     <div class="container">
         <div class="row">
