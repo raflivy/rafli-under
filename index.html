@@ -126,7 +126,21 @@
        loop: true
      });
    </script>
+   <script>
+    function enableSubmitButton() {
+        document.getElementById('recaptcha-error').style.display = 'none';
+    }
 
+    function validateForm() {
+
+        if (!grecaptcha.getResponse()) {
+            document.getElementById('recaptcha-error').style.display = 'block';
+            return false;
+        }
+
+        return true;
+    }
+   </script>
    <footer class="footer">
     <div class="container">
         <div class="row">
